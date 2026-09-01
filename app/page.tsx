@@ -3,41 +3,36 @@ import ProjectList from "@/components/ProjectList";
 const projects = [
   {
     title: "SayDpoetry",
-    description:
-      "A creative space for sharing poetry and connecting through words, expression, and feeling.",
-    technologies: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
+    description: "A home for poems, expression, and the small thoughts that deserve to be shared.",
+    technologies: ["HTML", "CSS", "JavaScript"],
     liveLink: "https://iketlenglesedi6-cmd.github.io/sayDpoetry-/",
     sourceLink: "https://github.com/iketlenglesedi6-cmd/sayDpoetry-",
   },
   {
     title: "Philosopher's Library",
-    description:
-      "A thoughtful digital library designed for exploring philosophical ideas and meaningful writing.",
-    technologies: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
+    description: "A reading-focused project for exploring philosophers, questions, and ideas.",
+    technologies: ["HTML", "CSS", "JavaScript"],
     liveLink: "https://iketlenglesedi6-cmd.github.io/philosophers-library/",
     sourceLink: "https://github.com/iketlenglesedi6-cmd/philosophers-library",
   },
   {
-    title: "WDD 231 Final Project",
-    description:
-      "A final course project that brings together responsive design, interactive web development, and practical problem-solving.",
-    technologies: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
-    liveLink: "https://iketlenglesedi6-cmd.github.io/wdd231/final/",
-    sourceLink: "https://github.com/iketlenglesedi6-cmd/wdd231/tree/main/final",
-  },
-  {
     title: "RS Attendance",
-    description:
-      "A React application for managing attendance with a modern, focused interface.",
+    description: "A React application created to make attendance easier to manage.",
     technologies: ["React", "JavaScript", "Vercel"],
     liveLink: "https://vercel.com/saiidi/rs-attendance/GTCHGTVapyB4h4pn9vBVfpo7q4hz",
     sourceLink: "https://github.com/iketlenglesedi6-cmd/rs-attendance",
   },
   {
+    title: "WDD 231 Final Project",
+    description: "A final web-development project bringing together responsive design and interactive features.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveLink: "https://iketlenglesedi6-cmd.github.io/wdd231/final/",
+    sourceLink: "https://github.com/iketlenglesedi6-cmd/wdd231/tree/main/final",
+  },
+  {
     title: "WDD 131 Project",
-    description:
-      "A responsive web development project created to practice clear structure, styling, and user-friendly design.",
-    technologies: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
+    description: "A responsive website built while developing my foundation in web design and development.",
+    technologies: ["HTML", "CSS", "JavaScript"],
     liveLink: "https://iketlenglesedi6-cmd.github.io/wdd131/project/index.html",
     sourceLink: "https://github.com/iketlenglesedi6-cmd/wdd131/tree/main/project",
   },
@@ -45,49 +40,27 @@ const projects = [
 
 export default function Home() {
   return (
-    <main>
-      <section className="border-b border-violet-200 bg-[#f4efff]">
-        <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 sm:py-28 lg:grid-cols-[1.4fr_0.6fr] lg:items-center">
-          <div>
-            <p className="mb-5 text-sm font-bold uppercase tracking-[0.24em] text-violet-700">
-              Creative web developer
-            </p>
-            <h1 className="max-w-3xl text-5xl font-bold tracking-tight text-violet-950 sm:text-6xl">
-              Digital spaces for ideas, stories, and learning.
-            </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-violet-900/75">
-              I&apos;m Iketleng Lesedi, a web development student who enjoys turning
-              meaningful ideas into warm, accessible, and thoughtful experiences
-              on the web.
-            </p>
-            <a
-              href="#projects"
-              className="mt-8 inline-flex rounded-full bg-violet-800 px-6 py-3 font-semibold text-white shadow-lg shadow-violet-900/20 transition hover:-translate-y-0.5 hover:bg-violet-950 focus:outline-none focus:ring-2 focus:ring-violet-700 focus:ring-offset-2"
-            >
-              Explore my work <span aria-hidden="true">&darr;</span>
-            </a>
-          </div>
-          <div className="mx-auto w-full max-w-xs">
-            <div className="rounded-3xl border border-violet-200 bg-white p-8 shadow-sm">
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-violet-700">A little about me</p>
-              <p className="mt-5 font-serif text-2xl leading-9 text-violet-950">
-                “I love making the web feel a little more human.”
-              </p>
-              <div className="mt-7 flex gap-2" aria-hidden="true">
-                <span className="h-3 w-3 rounded-full bg-violet-950" />
-                <span className="h-3 w-3 rounded-full bg-violet-600" />
-                <span className="h-3 w-3 rounded-full bg-rose-400" />
-              </div>
-            </div>
-          </div>
+    <main className="mx-auto max-w-6xl px-6 py-14 sm:py-20">
+      <section className="grid gap-10 border-b-2 border-violet-950 pb-14 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
+        <div>
+          <p className="text-sm font-bold tracking-wide text-violet-700">IKETLENG LESEDI — PORTFOLIO</p>
+          <h1 className="mt-5 max-w-3xl font-serif text-5xl leading-[1.04] text-violet-950 sm:text-7xl">
+            I make websites for people who like to think, read, and create.
+          </h1>
+        </div>
+        <div className="border-l-2 border-violet-300 pl-5 text-lg leading-8 text-violet-950/80 lg:mb-2">
+          <p>
+            I&apos;m a web development student drawn to poetry, philosophy, and the
+            quiet details that can make a website feel personal.
+          </p>
+          <p className="mt-4">Below is a selection of work I&apos;ve built and continue to learn from.</p>
         </div>
       </section>
 
-      <section id="projects" className="mx-auto max-w-6xl px-6 py-18 sm:py-24">
-        <div className="mb-10 max-w-2xl">
-          <p className="text-sm font-bold uppercase tracking-[0.24em] text-violet-700">Featured projects</p>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight text-violet-950 sm:text-4xl">Work with heart and curiosity.</h2>
-          <p className="mt-4 leading-7 text-violet-900/70">A selection of projects that reflect my interest in creativity, ideas, and useful design.</p>
+      <section id="projects" className="pt-14" aria-labelledby="projects-heading">
+        <div className="flex items-baseline justify-between gap-5">
+          <h2 id="projects-heading" className="font-serif text-3xl text-violet-950 sm:text-4xl">Selected work</h2>
+          <p className="text-sm text-violet-800">05 projects</p>
         </div>
         <ProjectList projects={projects} />
       </section>
