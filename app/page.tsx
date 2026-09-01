@@ -1,22 +1,81 @@
 import ProjectList from "@/components/ProjectList";
 
 const projects = [
-  { title: "WDD 430 Portfolio", description: "A responsive portfolio built with the Next.js App Router to showcase coursework, reusable components, and server-rendered pages.", technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"], link: "https://github.com/iketlenglesedi6-cmd/wdd430-portfolio" },
-  { title: "Web Development Coursework", description: "A collection of web development work focused on accessible interfaces, clean layouts, and practical problem-solving.", technologies: ["HTML", "CSS", "JavaScript", "GitHub"], link: "https://github.com/iketlenglesedi6-cmd" },
+  {
+    title: "SayDpoetry",
+    description:
+      "A creative space for sharing poetry and connecting through words, expression, and feeling.",
+    technologies: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
+    liveLink: "https://iketlenglesedi6-cmd.github.io/sayDpoetry-/",
+    sourceLink: "https://github.com/iketlenglesedi6-cmd/sayDpoetry-",
+  },
+  {
+    title: "Philosopher's Library",
+    description:
+      "A thoughtful digital library designed for exploring philosophical ideas and meaningful writing.",
+    technologies: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
+    liveLink: "https://iketlenglesedi6-cmd.github.io/philosophers-library/",
+    sourceLink: "https://github.com/iketlenglesedi6-cmd/philosophers-library",
+  },
+  {
+    title: "WDD 231 Final Project",
+    description:
+      "A final course project that brings together responsive design, interactive web development, and practical problem-solving.",
+    technologies: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
+    liveLink: "https://iketlenglesedi6-cmd.github.io/wdd231/final/",
+    sourceLink: "https://github.com/iketlenglesedi6-cmd/wdd231/tree/main/final",
+  },
 ];
 
 export default function Home() {
-  return <main>
-    <section className="border-b border-slate-200 bg-slate-50"><div className="mx-auto max-w-6xl px-6 py-20 sm:py-28">
-      <p className="mb-5 text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">Full-stack development student</p>
-      <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-slate-950 sm:text-6xl">Building thoughtful web experiences, one project at a time.</h1>
-      <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">I&apos;m Iketleng Lesedi, a web development student learning to create useful, accessible applications with modern tools.</p>
-      <a href="#projects" className="mt-8 inline-flex rounded-lg bg-blue-700 px-5 py-3 font-semibold text-white transition hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2">View my projects</a>
-    </div></section>
-    <section id="projects" className="mx-auto max-w-6xl px-6 py-16 sm:py-20"><div className="mb-9 max-w-2xl">
-      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">Selected work</p>
-      <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950">Projects I&apos;m proud to share</h2>
-      <p className="mt-3 text-slate-600">These projects reflect my growing skills in modern web development.</p>
-    </div><ProjectList projects={projects} /></section>
-  </main>;
+  return (
+    <main>
+      <section className="hero-glow overflow-hidden border-b border-violet-200/70">
+        <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 sm:py-28 lg:grid-cols-[1.4fr_0.6fr] lg:items-center">
+          <div>
+            <p className="mb-5 text-sm font-bold uppercase tracking-[0.24em] text-violet-700">
+              Creative web developer
+            </p>
+            <h1 className="max-w-3xl text-5xl font-bold tracking-tight text-violet-950 sm:text-6xl">
+              Digital spaces for ideas, stories, and learning.
+            </h1>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-violet-900/75">
+              I&apos;m Iketleng Lesedi, a web development student who enjoys turning
+              meaningful ideas into warm, accessible, and thoughtful experiences
+              on the web.
+            </p>
+            <a
+              href="#projects"
+              className="mt-8 inline-flex rounded-full bg-violet-800 px-6 py-3 font-semibold text-white shadow-lg shadow-violet-900/20 transition hover:-translate-y-0.5 hover:bg-violet-950 focus:outline-none focus:ring-2 focus:ring-violet-700 focus:ring-offset-2"
+            >
+              Explore my work <span aria-hidden="true">&darr;</span>
+            </a>
+          </div>
+          <div className="relative mx-auto w-full max-w-xs">
+            <div className="absolute -inset-5 rounded-full bg-fuchsia-300/35 blur-3xl" aria-hidden="true" />
+            <div className="relative rounded-[2.5rem] border border-white/70 bg-white/65 p-8 shadow-xl shadow-violet-900/10 backdrop-blur">
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-violet-700">A little about me</p>
+              <p className="mt-5 font-serif text-2xl leading-9 text-violet-950">
+                “I love making the web feel a little more human.”
+              </p>
+              <div className="mt-7 flex gap-2" aria-hidden="true">
+                <span className="h-3 w-3 rounded-full bg-violet-950" />
+                <span className="h-3 w-3 rounded-full bg-violet-600" />
+                <span className="h-3 w-3 rounded-full bg-fuchsia-400" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" className="mx-auto max-w-6xl px-6 py-18 sm:py-24">
+        <div className="mb-10 max-w-2xl">
+          <p className="text-sm font-bold uppercase tracking-[0.24em] text-violet-700">Featured projects</p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-violet-950 sm:text-4xl">Work with heart and curiosity.</h2>
+          <p className="mt-4 leading-7 text-violet-900/70">A selection of projects that reflect my interest in creativity, ideas, and useful design.</p>
+        </div>
+        <ProjectList projects={projects} />
+      </section>
+    </main>
+  );
 }
