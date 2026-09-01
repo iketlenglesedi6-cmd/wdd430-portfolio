@@ -25,12 +25,28 @@ const projects = [
     liveLink: "https://iketlenglesedi6-cmd.github.io/wdd231/final/",
     sourceLink: "https://github.com/iketlenglesedi6-cmd/wdd231/tree/main/final",
   },
+  {
+    title: "RS Attendance",
+    description:
+      "A React application for managing attendance with a modern, focused interface.",
+    technologies: ["React", "JavaScript", "Vercel"],
+    liveLink: "https://vercel.com/saiidi/rs-attendance/GTCHGTVapyB4h4pn9vBVfpo7q4hz",
+    sourceLink: "https://github.com/iketlenglesedi6-cmd/rs-attendance",
+  },
+  {
+    title: "WDD 131 Project",
+    description:
+      "A responsive web development project created to practice clear structure, styling, and user-friendly design.",
+    technologies: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
+    liveLink: "https://iketlenglesedi6-cmd.github.io/wdd131/project/index.html",
+    sourceLink: "https://github.com/iketlenglesedi6-cmd/wdd131/tree/main/project",
+  },
 ];
 
 export default function Home() {
   return (
     <main>
-      <section className="hero-glow overflow-hidden border-b border-violet-200/70">
+      <section className="border-b border-violet-200 bg-[#f4efff]">
         <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 sm:py-28 lg:grid-cols-[1.4fr_0.6fr] lg:items-center">
           <div>
             <p className="mb-5 text-sm font-bold uppercase tracking-[0.24em] text-violet-700">
@@ -51,9 +67,8 @@ export default function Home() {
               Explore my work <span aria-hidden="true">&darr;</span>
             </a>
           </div>
-          <div className="relative mx-auto w-full max-w-xs">
-            <div className="absolute -inset-5 rounded-full bg-fuchsia-300/35 blur-3xl" aria-hidden="true" />
-            <div className="relative rounded-[2.5rem] border border-white/70 bg-white/65 p-8 shadow-xl shadow-violet-900/10 backdrop-blur">
+          <div className="mx-auto w-full max-w-xs">
+            <div className="rounded-3xl border border-violet-200 bg-white p-8 shadow-sm">
               <p className="text-sm font-bold uppercase tracking-[0.18em] text-violet-700">A little about me</p>
               <p className="mt-5 font-serif text-2xl leading-9 text-violet-950">
                 “I love making the web feel a little more human.”
@@ -61,7 +76,7 @@ export default function Home() {
               <div className="mt-7 flex gap-2" aria-hidden="true">
                 <span className="h-3 w-3 rounded-full bg-violet-950" />
                 <span className="h-3 w-3 rounded-full bg-violet-600" />
-                <span className="h-3 w-3 rounded-full bg-fuchsia-400" />
+                <span className="h-3 w-3 rounded-full bg-rose-400" />
               </div>
             </div>
           </div>

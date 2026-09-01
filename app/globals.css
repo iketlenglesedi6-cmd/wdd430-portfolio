@@ -4,4 +4,3 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { background: var(--background); color: var(--foreground); font-family: Arial, Helvetica, sans-serif; }
-.hero-glow { background: radial-gradient(circle at 78% 30%, rgba(232, 121, 249, 0.28), transparent 25%), radial-gradient(circle at 18% 80%, rgba(196, 181, 253, 0.52), transparent 32%), linear-gradient(135deg, #fdf4ff 0%, #faf5ff 48%, #f5f3ff 100%); }
