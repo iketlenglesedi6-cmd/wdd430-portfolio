@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Iketleng Lesedi | Portfolio
 
-## Getting Started
+A responsive portfolio website built for WDD 430. It demonstrates Next.js App Router pages, reusable Server Components, TypeScript props, Tailwind CSS, and a simple Route Handler.
 
-First, run the development server:
+## Live site
+
+Deployment URL: Add your Vercel URL here after deploying, for example `https://wdd430-portfolio.vercel.app`.
+
+## Features
+
+- Home and About pages using file-based routing
+- Reusable `Header`, `Footer`, `ProjectCard`, and `ProjectList` components
+- Custom `SkillCard` Server Component with typed props
+- API route at `/api/hello`
+- Responsive, accessible layout with keyboard focus styles
+
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000). To create a production build, run `npm run build`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Assignment notes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Custom component: `SkillCard.tsx` displays a titled summary of a technical skill using typed `title` and `description` props.
 
-## Learn More
+`app/layout.tsx` is the root layout shared by every route; it defines the HTML document structure and renders the common header and footer around page content.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The components are Server Components because they do not need browser APIs, state, or event handlers. Rendering them on the server reduces client-side JavaScript and keeps the application fast.

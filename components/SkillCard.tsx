@@ -1,0 +1,2 @@
+interface SkillCardProps { title: string; description: string; }
+export default function SkillCard({ title, description }: SkillCardProps) { return <article className="rounded-xl border border-slate-200 bg-slate-50 p-6"><div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-700 font-bold text-white" aria-hidden="true">{title.charAt(0)}</div><h3 className="text-lg font-bold text-slate-950">{title}</h3><p className="mt-2 leading-7 text-slate-600">{description}</p></article>; }

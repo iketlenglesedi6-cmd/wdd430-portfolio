@@ -1,0 +1,1 @@
+export default function Footer() { return <footer className="border-t border-slate-200 bg-slate-950 py-7 text-slate-300"><div className="mx-auto flex max-w-6xl flex-col gap-2 px-6 text-sm sm:flex-row sm:items-center sm:justify-between"><p>Copyright &copy; {new Date().getFullYear()} Iketleng Lesedi</p><p>Built with Next.js and Tailwind CSS</p></div></footer>; }
