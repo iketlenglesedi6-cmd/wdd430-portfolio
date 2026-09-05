@@ -43,7 +43,6 @@ export default function Home() {
   return (
     <main className="mx-auto max-w-6xl px-6 py-12 sm:py-20">
       <section className="relative grid gap-10 overflow-hidden border-b-2 border-[#20352a] pb-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16 lg:items-end">
-        <Image src="https://iketlenglesedi6-cmd.github.io/sayDpoetry-/floral.png" alt="" width={460} height={420} className="pointer-events-none absolute -left-24 -top-20 w-72 opacity-20 mix-blend-multiply sm:w-96" aria-hidden="true" />
         <div className="relative lg:pb-8">
           <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#536e55]">Iketleng Lesedi / Selected work</p>
           <h1 className="display-serif mt-5 max-w-3xl text-5xl leading-[1.04] text-[#20352a] sm:text-7xl">
