@@ -4,7 +4,8 @@ A responsive portfolio website built for WDD 430. It demonstrates Next.js App Ro
 
 ## Live site
 
-Deployment URL: Add your Vercel URL here after deploying, for example `https://wdd430-portfolio.vercel.app`.
+Deployment URL: https://wdd430-portfolio-vert-xi.vercel.app/
+
 
 ## Features
 
