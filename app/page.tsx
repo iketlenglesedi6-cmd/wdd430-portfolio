@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ProjectList from "@/components/ProjectList";
 
 const projects = [
@@ -5,65 +6,68 @@ const projects = [
     title: "SayDpoetry",
     description: "A home for poems, expression, and the small thoughts that deserve to be shared.",
     technologies: ["HTML", "CSS", "JavaScript"],
-    liveLink: "https://iketlenglesedi6-cmd.github.io/sayDpoetry-/",
-    sourceLink: "https://github.com/iketlenglesedi6-cmd/sayDpoetry-",
+    link: "https://iketlenglesedi6-cmd.github.io/sayDpoetry-/",
+    preview: "https://iad.microlink.io/SOiDIjGLesZo_xeCM5GYuYIn938_rrOS-NvIytWba7_BFtv3E8nXEYtSo5QFjuaNPCW8T120lXHmZOLujWXcew.png",
   },
   {
     title: "Philosopher's Library",
     description: "A reading-focused project for exploring philosophers, questions, and ideas.",
     technologies: ["HTML", "CSS", "JavaScript"],
-    liveLink: "https://iketlenglesedi6-cmd.github.io/philosophers-library/",
-    sourceLink: "https://github.com/iketlenglesedi6-cmd/philosophers-library",
+    link: "https://iketlenglesedi6-cmd.github.io/philosophers-library/",
+    preview: "https://iad.microlink.io/DkIkjNGY5P3twvQD2JPdJ3ukgy_A5ejdETkHZLxiN8Gp95661vOM4nU7QjrHoS_50ER9p0JTTJO328MhrPfa9w.png",
   },
   {
     title: "RS Attendance",
     description: "A React application created to make attendance easier to manage.",
     technologies: ["React", "JavaScript", "Vercel"],
-    liveLink: "https://vercel.com/saiidi/rs-attendance/GTCHGTVapyB4h4pn9vBVfpo7q4hz",
-    sourceLink: "https://github.com/iketlenglesedi6-cmd/rs-attendance",
+    link: "https://rs-attendance.vercel.app/",
+    preview: "https://iad.microlink.io/44O2oxa4hhZ0HWgLt7dVFlPrg0hCj25fzf1RjQPhbWbH4caQ_CjZfFeL7w502iGmeeygJzNPxuqE5t-8mDsdog.png",
   },
   {
     title: "WDD 231 Final Project",
     description: "A final web-development project bringing together responsive design and interactive features.",
     technologies: ["HTML", "CSS", "JavaScript"],
-    liveLink: "https://iketlenglesedi6-cmd.github.io/wdd231/final/",
-    sourceLink: "https://github.com/iketlenglesedi6-cmd/wdd231/tree/main/final",
+    link: "https://iketlenglesedi6-cmd.github.io/wdd231/final/",
+    preview: "https://iad.microlink.io/jiPbVNJ8HGLiNgubMNeUVtyrTu8abUJ-LFhnzJuvQW4evM86v3zQHQj9JOumsqpm3VCjMm0oJVIuLoGD4c3ziA.png",
   },
   {
     title: "WDD 131 Project",
     description: "A responsive website built while developing my foundation in web design and development.",
     technologies: ["HTML", "CSS", "JavaScript"],
-    liveLink: "https://iketlenglesedi6-cmd.github.io/wdd131/project/index.html",
-    sourceLink: "https://github.com/iketlenglesedi6-cmd/wdd131/tree/main/project",
+    link: "https://iketlenglesedi6-cmd.github.io/wdd131/project/index.html",
+    preview: "https://iad.microlink.io/QcCf5ibrdUCL30hSvhRTrUosODYsSR9EUddkv15ojjnDSb9NLcGFACLXkBDoY-tLEbki3NbSy6vpVfy6m-bxMg.png",
   },
 ];
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-6xl px-6 py-14 sm:py-20">
-      <section className="grid gap-10 border-b-2 border-violet-950 pb-14 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
-        <div>
-          <p className="text-sm font-bold tracking-wide text-violet-700">IKETLENG LESEDI — PORTFOLIO</p>
-          <h1 className="mt-5 max-w-3xl font-serif text-5xl leading-[1.04] text-violet-950 sm:text-7xl">
-            I make websites for people who like to think, read, and create.
+    <main className="mx-auto max-w-6xl px-6 py-12 sm:py-20">
+      <section className="relative grid gap-10 overflow-hidden border-b-2 border-[#20352a] pb-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16 lg:items-end">
+        <Image src="https://iketlenglesedi6-cmd.github.io/sayDpoetry-/floral.png" alt="" width={460} height={420} className="pointer-events-none absolute -left-24 -top-20 w-72 opacity-20 mix-blend-multiply sm:w-96" aria-hidden="true" />
+        <div className="relative lg:pb-8">
+          <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#536e55]">Iketleng Lesedi / Selected work</p>
+          <h1 className="display-serif mt-5 max-w-3xl text-5xl leading-[1.04] text-[#20352a] sm:text-7xl">
+            I make room for <em className="text-[#6f9b70]">good ideas</em> on the web.
           </h1>
+          <div className="mt-8 border-l-2 border-[#82ed35] pl-5 text-base leading-7 text-[#536e55]">
+            <p>I&apos;m Iketleng, a web development student drawn to poetry, philosophy, and the quiet details that make a website feel personal.</p>
+            <a href="#projects" className="mt-5 inline-block text-sm font-bold text-[#20352a] underline decoration-2 underline-offset-4 hover:text-[#6f9b70]">See the work ↓</a>
+          </div>
         </div>
-        <div className="border-l-2 border-violet-300 pl-5 text-lg leading-8 text-violet-950/80 lg:mb-2">
-          <p>
-            I&apos;m a web development student drawn to poetry, philosophy, and the
-            quiet details that can make a website feel personal.
-          </p>
-          <p className="mt-4">Below is a selection of work I&apos;ve built and continue to learn from.</p>
-        </div>
+        <a href={projects[0].link} target="_blank" rel="noopener noreferrer" className="group relative block focus:outline-none focus:ring-2 focus:ring-[#82ed35]">
+          <div className="relative overflow-hidden border border-[#20352a]/25 bg-[#dce5bd] p-3"><Image src={projects[0].preview} alt="SayDpoetry project preview" width={1200} height={700} priority className="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-[1.02] sm:h-80" /><span className="absolute right-6 top-6 bg-[#82ed35] px-3 py-2 text-xs font-bold uppercase tracking-[0.14em] text-[#20352a]">01 / Featured</span></div>
+          <div className="mt-4 flex items-start justify-between gap-4"><div><p className="text-xs font-bold uppercase tracking-[0.18em] text-[#536e55]">SayDpoetry</p><p className="mt-1 text-sm text-[#536e55]">A quiet home for poems and small thoughts.</p></div><span className="text-sm font-bold text-[#20352a]">Visit ↗</span></div>
+        </a>
       </section>
 
       <section id="projects" className="pt-14" aria-labelledby="projects-heading">
-        <div className="flex items-baseline justify-between gap-5">
-          <h2 id="projects-heading" className="font-serif text-3xl text-violet-950 sm:text-4xl">Selected work</h2>
-          <p className="text-sm text-violet-800">05 projects</p>
+        <div className="flex items-end justify-between gap-5 border-b border-[#20352a]/20 pb-4">
+          <div><p className="text-xs font-bold uppercase tracking-[0.2em] text-[#536e55]">02 — Selected work</p><h2 id="projects-heading" className="display-serif mt-2 text-4xl text-[#20352a] sm:text-5xl">More things I&apos;ve made</h2></div>
+          <p className="hidden text-sm text-[#536e55] sm:block">04 projects</p>
         </div>
-        <ProjectList projects={projects} />
+        <ProjectList projects={projects.slice(1)} startIndex={1} />
       </section>
+
     </main>
   );
 }
